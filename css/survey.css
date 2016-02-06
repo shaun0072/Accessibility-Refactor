@@ -1,0 +1,57 @@
+/* Survey page styles */
+
+.photo{
+  width: 60%;
+  padding: 10px;
+}
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+.newsletter{
+  text-align: right;
+}
+fieldset {
+	border: none;
+}
+legend {
+	text-align: center;
+}
+label[for="albums"],
+label[for="fav-album"] {
+  display: block;
+  margin: 1.1em 0; 
+}
+input[type="radio"] {
+	margin: 3px 8px 0px 5px;
+}
+input[type="text"] {
+	display: inline-block;
+	margin: .9em 0 .9em .9em;
+}
+input[id="name"] {
+	margin-top: 2em;
+}
+button[type="submit"] {
+	margin-top: 1em;
+}
+input:focus,
+textarea:focus,
+button:focus,
+select:focus,
+label[for="radio"] {
+	outline: none;
+	border: 1px solid #7D2C32;
+	transform: scale(1.1);
+}
+#hint {
+	margin: -20000px;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+  .photo{
+    width: 40%;
+  }
+}

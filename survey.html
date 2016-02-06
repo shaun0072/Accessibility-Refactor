@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/survey.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300%7CRaleway:400,300%7COpen+Sans" rel='stylesheet' type='text/css' />
+    <title>Accessible Frog</title>
+  </head>
+
+  <body>
+    <nav class="main-nav" role="navigation">
+      <ul class="nav">
+        <li class="name"><a href="index.html">Accessible Frog</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="#">Survey</a></li>
+      </ul>
+    </nav>
+
+    <header role="banner">
+		<h1>Accessible Frog</h1>
+		<h2>We Make Awesome Music</h2>	
+    </header>
+
+    <main>
+	 <form role="form">
+	  <fieldset>
+		  <legend class= "heading">Survey</legend>
+		  <div class="card">
+			<div class="flex">
+			  <img class="photo" src= "img/concert01.jpg" alt>
+			  <div class="container">
+				<div class ="survey">
+				  <p>Who is your Favorite band Member:</p>
+				  <input id="john" type="radio" name="res" value="John"><label for="john" tabindex="1">John</label>
+				  <input id="hazzard" type="radio" name="res" value="Hazzard"><label for="hazzard"  tabindex="2">Hazzard</label>
+				  <input id="bob" type="radio" name="res" value="Bob"><label for="bob" tabindex="3">Bob</label>
+				  <input id="sally" type="radio" name="res" value="Sally"><label for="sally" tabindex="4">Sally</label>
+
+				  <label for="albums">What is your favorite Album:</label>
+				  <select id="albums" name="select" tabindex="5" role="listbox">
+					<option value="1" role="option">A Day Of Old</option>
+					<option value="2" role="option">Diamond Fireworks</option>
+					<option value="3" role="option">Enjoy Your Desire</option>
+					<option value="4" role="option">Finding My Shadow</option>
+					<option value="5" role="option">Heroic Forever</option>
+					<option value="6" role="option">Midnight Fires</option>
+					<option value="7" role="option">Music Of My Life</option>
+					<option value="8" role="option">Party For An Angel</option>
+					<option value="9" role="option">Song For Yesterday</option>
+					<option value="10" role="option">Street Of The Rider</option>
+					<option value="11" role="option">This Is For You</option>
+				  </select>
+
+				  <label for="fav-album">What is your favorite album:</label>
+				  <textarea id="fav-album" tabindex="6" role="textbox"></textarea>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  </fieldset>
+	  <fieldset>
+		  <legend class= "heading">Newsletter</legend>
+		  <div class="card">
+			<div class="flex">
+			  <img class="photo" src= "img/the_band.jpg" alt>
+				<div class="container">
+				  <div class="newsletter">
+					  <label for="name">Name:</label><input id="name" type ="text" name="textfield" role="textbox" tabindex="7"><br />
+					  <label for="email">email:</label><input id="email" type ="text" name="textfield" role="textbox" tabindex="8"><br />
+					  <label for="re-email">retype email: </label><input id="re-email" type ="text" name="textfield" role="textbox" tabindex="9"><br />
+					  <button type="submit" role="button" aria-describedby="hint" tabindex="10">Sign Up</button>
+					  <p id="hint">By clicking or pressing enter, you will submit the information you provided in this form.</p>
+				  </div>
+				</div>
+			</div>
+		  </div>
+	  </fieldset>
+	 </form>
+    </main>
+    
+    <footer role="contentinfo">
+      <ul>
+        <li><a href="#" class="social twitter"><img src="img/twitter-32.png" alt="Click here to visit our twitter page"/></a></li>
+        <li><a href="#" class="social youtube"><img src="img/youtube-32.png" alt="Click here to watch our video on youtube"/></a></li>
+        <li><a href="#" class="social spotify"><img src="img/spotify-32.png" alt="Click here to visit our spotify page"/></a></li>
+      </ul>
+      <p class="copyright">Copyright 2015, Accessible Frog</p>
+    </footer>
+  </body>
+</html>

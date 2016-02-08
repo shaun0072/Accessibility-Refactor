@@ -17,12 +17,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #7D2C32;
-  font-size: 1.5em;
-  transition: all .3s;
-}
-a:hover {
-  color: #BE1925;
 }
 
 /* Section Styles */
@@ -57,15 +51,13 @@ a:hover {
 }
 
 .nav a {
-  transition: all .5s;
   color: #E6E5E5;
   font-size: 1em;
+  transition: all .5s;
 }
 .nav a:hover {
-  color: white;
-  
+  color: #C62433;
 }
-
 header {
   text-align: center;
   background: url('../img/concert02_no_text.jpg') no-repeat top center ;
@@ -133,8 +125,6 @@ header .name{
 .information{
   width: 100%;
   text-align: center;
-  /*display: inline-block;
-  position: absolute;*/
 }
 
 .heading{
@@ -144,6 +134,24 @@ header .name{
   margin-top: 10px;
   font-weight: normal;
 }
+.buy {
+	display: block;
+	width: 150px;
+	text-align: center;
+	padding: 7px;
+	background: #8D494F;
+	border: 1px solid black;
+	color: #E6E6E5;
+    font-size: 1em;
+    transition: all .3s;
+}
+.buy:hover {
+    color: white;
+	background: #7D2C32;
+	font-size: 1.1em;
+	padding: 6px;
+}
+
 
 /* Footer styles */
 
@@ -174,10 +182,12 @@ a.social {
   height: 30px;
   background-size: 30px 30px;
   opacity: .4;
+  border-radius: 10px;
   transition: all .5s;
 }
 a.social:hover {
   opacity: 1;
+  background: black;
 }
 .clearfix {
   clear: both;
